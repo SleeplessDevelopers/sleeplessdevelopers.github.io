@@ -213,9 +213,14 @@ body {
 .images {
   @media only screen and (min-width: $cut) {
     float: left;
+    margin-left: 0px;
   }
 
-  margin-left: 50px;
+  @media only screen and (mid-width: 776px) {
+      margin-left: 0px;
+  }
+
+  margin-left: 100px !important;
 }
 
 .project-link {
