@@ -211,14 +211,21 @@ body {
 }
 
 .images {
-  @media only screen and (min-width: $cut) {
-    float: left;
-    margin-left: 0px;
+  @media only screen and (max-width: $cut) {
+      position: absolute;
+      left: 50%;
+      margin-left: -128px !important;
   }
+  margin-left: 100px;
+  float: left;
+}
 
-  @media only screen and (mid-width: 776px) {
-      margin-left: 0px !important;
-  }
+.info {
+    @media only screen and (max-width: $cut) {
+        padding-top: 300px;
+        float: none !important;
+        margin: auto;
+    }
 }
 
 .project-link {
